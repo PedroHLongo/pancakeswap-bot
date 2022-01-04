@@ -8,7 +8,6 @@ from pancake_bot import buy_token
 
 
 def get_message():
-
     last_message = ""
     message =client.get_messages(config.GROUP_NAME, 1)
     token = ""
@@ -29,7 +28,6 @@ def get_message():
             return(token)
 
 def main():
-    
     last_message = ""
     new_last_message = ""
     while(True):
