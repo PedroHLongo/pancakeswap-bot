@@ -42,4 +42,4 @@ def buy_token(token):
         
     signed_txn = web3.eth.account.sign_transaction(pancakeswap2_txn, private_key=config.PRIVATE_KEY)
     tx_token = web3.eth.send_raw_transaction(signed_txn.rawTransaction)
-    print(web3.toHex(tx_token))
+    print('Thx hash -> ', web3.toHex(tx_token))
